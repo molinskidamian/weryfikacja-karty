@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Verify Cards</title>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<script type="module" src="./js/scripts.js"></script>
+		<div class="label">Wprowadź nr karty:</div>
+		<form action="" id="card-form">
+			<div class="wrapper">
+				<div class="form-control">
+					<label for="first">
+						<input
+							class="card-number"
+							type="number"
+							pattern="[0-9]{4}"
+							placeholder="0000"
+							value="1231"
+						/>
+					</label>
+				</div>
+				<div class="form-control">
+					<label for="second">
+						<input
+							class="card-number"
+							type="number"
+							pattern="[0-9]{4}"
+							placeholder="0000"
+							value="2123"
+						/>
+					</label>
+				</div>
+				<div class="form-control">
+					<label for="third">
+						<input
+							class="card-number"
+							type="number"
+							pattern="[0-9]{4}"
+							placeholder="0000"
+							value="3231"
+						/>
+					</label>
+				</div>
+				<div class="form-control">
+					<label for="four">
+						<input
+							class="card-number"
+							type="number"
+							pattern="[0-9]{4}"
+							placeholder="0000"
+							value="4231"
+						/>
+					</label>
+				</div>
+				<div class="form-control">
+					<button type="submit" class="btn-check">Sprawdź</button>
+				</div>
+			</div>
+		</form>
+		<div class="footer">
+			<p class="result"></p>
+		</div>
+	</body>
+</html>

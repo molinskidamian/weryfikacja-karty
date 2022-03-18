@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Montserrat:wght@400;500;600;700&display=swap');
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Fredoka', sans-serif;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+}
+
+form > .wrapper {
+	display: flex;
+}
+input {
+	max-width: 12vw;
+	background-color: pink;
+	border: 1px solid black;
+	outline: none;
+	padding: 0.3rem;
+	margin-right: 0.5rem;
+}
+
+input:invalid {
+	border: 1px solid red;
+}
