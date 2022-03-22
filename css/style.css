@@ -12,9 +12,6 @@ body {
 	font-size: 16px;
 }
 
-form > .wrapper {
-	display: flex;
-}
 input {
 	max-width: 12vw;
 	background-color: pink;
@@ -26,4 +23,17 @@ input {
 
 input:invalid {
 	border: 1px solid red;
+}
+
+.card-number-wrapper {
+	outline: 1px dashed red;
+	display: flex;
+	padding: 1rem;
+	margin: 1rem 0;
+}
+
+.btn-check {
+	padding: 0.3rem;
+	outline: none;
+	border: none;
 }

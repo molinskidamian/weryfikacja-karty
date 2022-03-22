@@ -7,13 +7,9 @@ btn.addEventListener('click', e => {
 	e.preventDefault();
 
 	const cardNumberParts = document.querySelectorAll('.card-number');
-	// const cardNumberPartsArr = Array.from(cardNumberParts);
 	const cardNumberPartsArr = [...cardNumberParts];
 
-	const cardNumber = cardNumberPartsArr.map(el => el.value);
-	console.log(cardNumber);
-	// cardNumber.toString();
-
-	const card = new CheckCardNumber(cardNumber);
+	const card = new CheckCardNumber(cardNumberPartsArr.map(el => el.value));
 	result.textContent = card.getCardNumber();
+	card.checkAmericanExpress();
 });
